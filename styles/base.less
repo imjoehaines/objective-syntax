@@ -1,0 +1,143 @@
+@import 'syntax-variables.less';
+
+// Editor interface
+
+.atom-text-editor,
+:host {
+   background-color: @syntax-background-color;
+   color: @syntax-text-color;
+}
+
+.atom-text-editor,
+:host {
+
+   .wrap-guide {
+      background-color: @syntax-wrap-guide-color;
+   }
+
+   .indent-guide {
+      color: @syntax-indent-guide-color;
+   }
+
+   .invisible,
+   .invisible-character {
+      color: @syntax-invisible-character-color;
+   }
+
+   .gutter {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color;
+
+      .line-number {
+
+         &.cursor-line {
+            background-color: @syntax-gutter-background-color-selected;
+            color: @syntax-gutter-text-color-selected;
+         }
+
+         &.git-line-added {
+            border-left-color: @syntax-color-added;
+         }
+
+         &.git-line-modified {
+            border-left-color: @syntax-color-modified;
+         }
+
+         &.git-line-removed:before {
+            border-left-color: @syntax-color-removed;
+         }
+      }
+   }
+
+   .gutter .line-number.folded,
+   .gutter .line-number:after,
+   .fold-marker:after {
+      color: @pink;
+   }
+
+   .cursor {
+      border-left: 2px solid @syntax-cursor-color;
+   }
+
+   .cursor-line {
+      background-color: transparent;
+   }
+
+   .highlight.selection .region {
+      background-color: @syntax-selection-color;
+   }
+
+   .region.bracket-matcher {
+      background-color: fadeout(@dark-gray, 66%);
+      border: 0;
+   }
+
+   // Common tokens
+
+   .source,
+   .text {
+      color: @dark-gray;
+   }
+
+   .comment,
+   .source.embedded .comment {
+      color: @light-gray;
+   }
+
+   .entity,
+   .keyword.operator {
+      color: @dark-gray;
+   }
+
+   .function.name,
+   .function.support,
+   .function-call:not(.js),
+   .type {
+      color: @orange;
+   }
+
+   .punctuation:not(.comment) {
+      color: @dark-gray;
+   }
+
+   .variable.punctuation,
+   .variable.parameter,
+   .keyword.operator {
+      color: @purple;
+   }
+
+   .keyword.control,
+   .keyword.other,
+   .storage,
+   .support.class,
+   .function.argument {
+      color: @blue;
+   }
+
+   .constant,
+   .keyword.unit {
+      color: @green;
+   }
+
+   .constant.numeric,
+   .embedded.begin.php {
+       color: red;
+   }
+
+   .string {
+      color: @pink;
+
+      .source,
+      .meta.embedded.line {
+         color: @pink;
+      }
+
+      .punctuation.section.embedded {
+         color: @pink;
+
+         .source {
+            color: @pink;
+         }
+      }
+   }
+}

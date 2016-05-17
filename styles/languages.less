@@ -1,0 +1,194 @@
+// Language-specific tokens
+
+.elm {
+  &.keyword.other.arrow {
+    color: @purple;
+  }
+}
+
+.js {
+  &.constant.dom {
+    color: inherit;
+  }
+
+  &.constant {
+    color: @purple;
+  }
+
+  &.variable.other.module {
+    color: @green;
+  }
+
+  &.variable.default {
+    color: @blue;
+  }
+
+  &.source .embedded {
+    color: @syntax-text-color;
+  }
+
+  &.source .embedded.punctuation {
+    color: @purple;
+  }
+}
+
+.php {
+  &.namespace .punctuation {
+    color: @purple;
+  }
+
+  &.keyword.new {
+    color: @purple;
+  }
+
+  &.function.argument {
+    color: inherit;
+  }
+}
+
+.c {
+
+   &.meta {
+      color: @dark-gray;
+   }
+
+   &.storage.type {
+      color: @blue;
+   }
+}
+
+.coffee {
+
+   &.function {
+
+      &.support {
+         color: @blue;
+
+         &.console {
+            color: @dark-gray;
+         }
+      }
+
+      &.storage.type {
+         color: @blue;
+      }
+   }
+}
+
+.css {
+
+   &.entity.name.tag {
+      color: @blue;
+   }
+
+   &.entity.class,
+   &.entity.id,
+   &.punctuation.definition.entity {
+      color: @purple;
+   }
+
+   &.pseudo-class .punctuation.definition.entity {
+      color: @dark-gray;
+   }
+}
+
+.gfm {
+
+   &.heading {
+      color: @blue;
+   }
+
+   &.comment.quote {
+      color: @dark-gray;
+   }
+
+   &.source .markup.heading {
+      font-weight: normal;
+   }
+
+   &.entity {
+      color: @purple;
+   }
+}
+
+.html {
+
+   &.entity.name.tag,
+   &.punctuation.tag,
+   &.meta.tag.doctype {
+      color: @blue;
+   }
+
+   &.entity.attribute-name {
+      color: @purple;
+   }
+}
+
+.java {
+
+   &.storage {
+
+      &.type {
+         color: @dark-gray;
+
+         &.primitive {
+            color: @blue;
+         }
+      }
+
+      &.modifier.import {
+         color: @pink;
+      }
+   }
+}
+
+.less {
+
+   // & operator doesn't work here
+   .keyword.control.logical.operator {
+      color: @dark-gray;
+   }
+
+   .keyword.control.html.elements {
+      color: @dark-gray;
+   }
+}
+
+.python {
+
+   &.function.storage.type {
+      color: @blue;
+   }
+
+   &.punctuation {
+      color: @dark-gray;
+
+      &.string {
+         color: @pink;
+      }
+   }
+
+   &.keyword {
+
+      &.operator.logical {
+         color: @blue;
+      }
+
+      // If you prefer "print" to be considered a highlighted keyword,
+      // comment out this rule.
+      &.other {
+         color: @dark-gray;
+      }
+   }
+}
+
+.scss {
+
+   .variable .punctuation {
+      color: @dark-gray;
+   }
+
+   .constant.punctuation {
+      color: @green;
+   }
+}

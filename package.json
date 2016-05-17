@@ -1,0 +1,11 @@
+{
+  "name": "objective-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Objectively the best syntax theme on the Ark (based on https://github.com/timglorioso/plastik-syntax)",
+  "repository": "https://github.com/imjoehaines/objective-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
