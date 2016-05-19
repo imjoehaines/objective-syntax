@@ -21,7 +21,7 @@
 
    .invisible,
    .invisible-character {
-      color: @syntax-invisible-character-color;
+     color: @syntax-background-color;
    }
 
    .gutter {
@@ -60,7 +60,12 @@
    }
 
    .cursor-line {
-      background-color: fadeout(@light-gray, 95%);
+      background-color: fadeout(@light-gray, 90%);
+   }
+
+   .cursor-line .invisible,
+   .cursor-line .invisible-character {
+     color: fadeout(@light-gray, 90%);
    }
 
    .highlight.selection .region {
