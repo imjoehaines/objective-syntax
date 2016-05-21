@@ -46,6 +46,40 @@
   }
 }
 
+.gfm {
+   &.heading {
+      color: @blue;
+   }
+
+   &.comment.quote {
+      color: @dark-gray;
+   }
+
+   &.source .markup.heading {
+      font-weight: normal;
+   }
+
+   &.entity {
+      color: @purple;
+   }
+
+   &.link {
+     color: @pink;
+   }
+
+   &.bold {
+     font-weight: bold;
+   }
+
+   &.italic {
+     font-style: italic;
+   }
+
+   &.list {
+     color: @orange;
+   }
+}
+
 .c {
 
    &.meta {
@@ -89,25 +123,6 @@
 
    &.pseudo-class .punctuation.definition.entity {
       color: @dark-gray;
-   }
-}
-
-.gfm {
-
-   &.heading {
-      color: @blue;
-   }
-
-   &.comment.quote {
-      color: @dark-gray;
-   }
-
-   &.source .markup.heading {
-      font-weight: normal;
-   }
-
-   &.entity {
-      color: @purple;
    }
 }
 
